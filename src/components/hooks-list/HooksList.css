@@ -1,0 +1,13 @@
+.hooks-list__list-item {
+    font-size: 24px;
+    padding: 8px;
+}
+
+.hooks-list__list-item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.hooks-list__list-selected {
+    background-color: bisque;
+    color: aquamarine;
+}

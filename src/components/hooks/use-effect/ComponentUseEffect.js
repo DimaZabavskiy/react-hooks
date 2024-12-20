@@ -38,6 +38,23 @@ const ComponentUseEffect = props => {
     }
   }, [])
 
+  useEffect(() => {
+    let isActual = true;
+
+    setTimeout(() => {
+      console.log({isActual});
+      if (isActual) {
+        console.log('Устанавливаем counter на 300');
+        setCounter(300);
+      }
+    }, 20000);
+
+    return () => {
+      console.log('isActual false !!!');
+      isActual = false;
+    }
+  }, [])
+
   return (
     <main>
       <p>Счетчик: {counter}</p>

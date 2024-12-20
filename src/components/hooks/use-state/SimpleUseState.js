@@ -15,10 +15,8 @@ const SimpleUseState = () => {
   const decrease = () => setCounter(counter - 1);
   const reset = () => setCounter(0);
 
-  const getIncreasedValue = prevState => {
-    console.log({ prevState, counter });
-    return prevState + 1;
-  }
+  //  ОБЯЗАТЕЛЬНО что-то вернет
+  const getIncreasedValue = prevState => prevState + 1;
 
   // вызов setState через ФУНКЦИЮ
   const increaseFunc = () => setCounter(getIncreasedValue);
@@ -46,6 +44,23 @@ const SimpleUseState = () => {
   //  инициализация state БЕЗ ВЫЗОВА функции
   const [counter3, setCounter3] = useState(getInitialCounter);
   const increase3 = () => setCounter3(counter3 + 1);
+
+
+  // const localInitialValue = getInitialCounter(true);
+  // // РЕАКТ СМОТРИТ В ХРАНИЛИЩЕ НАЛИЧИЕ STATE
+  //
+  // const localInitialValue = getInitialCounter;
+  // // РЕАКТ СМОТРИТ В ХРАНИЛИЩЕ НАЛИЧИЕ STATE
+  //
+  // if (reactDDD.counter3) {
+  //   counter3 = reactDDD.counter3
+  // } else {
+  //   if (typeof localInitialValue === "function") {
+  //     counter3 = localInitialValue();
+  //   } else {
+  //     counter3 = localInitialValue;
+  //   }
+  // }
 
   return (
     <div>
