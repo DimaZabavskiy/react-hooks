@@ -1,0 +1,17 @@
+.App {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  column-gap: 30px;
+  min-height: 100vh;
+}
+
+.App-bar {
+  width: 200px;
+  background: aliceblue;
+}
+
+.App-selectedHook {
+
+}
