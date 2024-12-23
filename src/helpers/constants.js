@@ -4,6 +4,7 @@ import ComponentUseRef from "../components/hooks/use-ref/ComponentUseRef";
 import ComponentUseReducer from "../components/hooks/use-reducer/ComponentUseReducer";
 import ComponentUseMemo from "../components/hooks/use-memo/ComponentUseMemo";
 import ComponentUseCallback from "../components/hooks/use-callback/ComponentUseCallback";
+import ComponentUseContext from "../components/hooks/use-context/ComponentUseContext";
 
 export const hooksList = [
   {name: 'useState', component: ComponentUseState},
@@ -12,4 +13,5 @@ export const hooksList = [
   {name: 'useReducer', component: ComponentUseReducer},
   {name: 'useMemo', component: ComponentUseMemo},
   {name: 'useCallback', component: ComponentUseCallback},
+  {name: 'useContext', component: ComponentUseContext},
 ]
