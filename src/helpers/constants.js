@@ -8,6 +8,7 @@ import ComponentUseContext from "../components/hooks/use-context/ComponentUseCon
 import ComponentUseActionState from "../components/hooks/use-action-state/ComponentUseActionState";
 import ComponentUseDebugValue from "../components/hooks/use-debug-value/ComponentUseDebugValue";
 import ComponentUseDeferredValue from "../components/hooks/use-deferred-value/ComponentUseDeferredValue";
+import ComponentUseId from "../components/hooks/use-id/ComponentUseId";
 
 export const hooksList = [
   {name: 'useState', component: ComponentUseState},
@@ -20,4 +21,5 @@ export const hooksList = [
   {name: 'useActionState', component: ComponentUseActionState},
   {name: 'useDebugValue', component: ComponentUseDebugValue},
   {name: 'useDeferredValue', component: ComponentUseDeferredValue},
+  {name: 'useId', component: ComponentUseId},
 ]
