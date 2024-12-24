@@ -11,6 +11,7 @@ import ComponentUseDeferredValue from "../components/hooks/use-deferred-value/Co
 import ComponentUseId from "../components/hooks/use-id/ComponentUseId";
 import ComponentUseImperativeHandle from "../components/hooks/use-imperative-handle/ComponentUseImperativeHandle";
 import ComponentUseInsertionEffect from "../components/hooks/use-insertion-effect/ComponentUseInsertionEffect";
+import ComponentUseOptimistic from "../components/hooks/use-optimistic/ComponentUseOptimistic";
 
 export const hooksList = [
   {name: 'useState', component: ComponentUseState},
@@ -26,4 +27,5 @@ export const hooksList = [
   {name: 'useId', component: ComponentUseId},
   {name: 'useImperativeHandle', component: ComponentUseImperativeHandle},
   {name: 'useInsertionEffect', component: ComponentUseInsertionEffect},
+  {name: 'useOptimistic', component: ComponentUseOptimistic},
 ]
