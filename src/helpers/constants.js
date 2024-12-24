@@ -6,6 +6,7 @@ import ComponentUseMemo from "../components/hooks/use-memo/ComponentUseMemo";
 import ComponentUseCallback from "../components/hooks/use-callback/ComponentUseCallback";
 import ComponentUseContext from "../components/hooks/use-context/ComponentUseContext";
 import ComponentUseActionState from "../components/hooks/use-action-state/ComponentUseActionState";
+import ComponentUseDebugValue from "../components/hooks/use-debug-value/ComponentUseDebugValue";
 
 export const hooksList = [
   {name: 'useState', component: ComponentUseState},
@@ -16,4 +17,5 @@ export const hooksList = [
   {name: 'useCallback', component: ComponentUseCallback},
   {name: 'useContext', component: ComponentUseContext},
   {name: 'useActionState', component: ComponentUseActionState},
+  {name: 'useDebugValue', component: ComponentUseDebugValue},
 ]
