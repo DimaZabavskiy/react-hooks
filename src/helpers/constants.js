@@ -10,6 +10,7 @@ import ComponentUseDebugValue from "../components/hooks/use-debug-value/Componen
 import ComponentUseDeferredValue from "../components/hooks/use-deferred-value/ComponentUseDeferredValue";
 import ComponentUseId from "../components/hooks/use-id/ComponentUseId";
 import ComponentUseImperativeHandle from "../components/hooks/use-imperative-handle/ComponentUseImperativeHandle";
+import ComponentUseInsertionEffect from "../components/hooks/use-insertion-effect/ComponentUseInsertionEffect";
 
 export const hooksList = [
   {name: 'useState', component: ComponentUseState},
@@ -24,4 +25,5 @@ export const hooksList = [
   {name: 'useDeferredValue', component: ComponentUseDeferredValue},
   {name: 'useId', component: ComponentUseId},
   {name: 'useImperativeHandle', component: ComponentUseImperativeHandle},
+  {name: 'useInsertionEffect', component: ComponentUseInsertionEffect},
 ]
