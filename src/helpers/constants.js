@@ -13,6 +13,7 @@ import ComponentUseImperativeHandle from "../components/hooks/use-imperative-han
 import ComponentUseInsertionEffect from "../components/hooks/use-insertion-effect/ComponentUseInsertionEffect";
 import ComponentUseOptimistic from "../components/hooks/use-optimistic/ComponentUseOptimistic";
 import ComponentUseSyncExternalStore from "../components/hooks/use-sync-external-store/ComponentUseSyncExternalStore";
+import ComponentUseTransition from "../components/hooks/use-transition/ComponentUseTransition";
 
 export const hooksList = [
   {name: 'useState', component: ComponentUseState},
@@ -30,4 +31,5 @@ export const hooksList = [
   {name: 'useInsertionEffect', component: ComponentUseInsertionEffect},
   {name: 'useOptimistic', component: ComponentUseOptimistic},
   {name: 'useSyncExternalStore', component: ComponentUseSyncExternalStore},
+  {name: 'useTransition', component: ComponentUseTransition},
 ]
