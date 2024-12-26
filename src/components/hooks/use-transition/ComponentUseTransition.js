@@ -5,7 +5,7 @@ export const LIST_SIZE = 20000;
 
 const ComponentUseTransition = () => {
   return (
-    <main style={{display: "flex"}}>
+    <main style={{display: "flex", minWidth: "500px"}}>
       <div style={{flex: 1}}>
         <SlowExample/>
       </div>
