@@ -1,25 +1,15 @@
-import {memo} from "react";
+const LIST_SIZE = 20000;
 
-
-function SlowItem({ text }) {
-  let startTime = performance.now();
-  while (performance.now() - startTime < 1) {
-    // Do nothing for 1 ms per item to emulate extremely slow code
-  }
-
-  return <li className="item">Text: {text}</li>;
-}
-
-const PreparedList = memo(({text}) => {
+const PreparedList = ({text}) => {
   const list = [];
 
-  for (let i = 0; i < 250; i++) {
-    list.push(<SlowItem key={i} text={text} />)
+  for (let i = 0; i < LIST_SIZE; i++) {
+    list.push(<li key={i}>{text}</li>)
   }
 
   return (
     <ul>{list}</ul>
   )
-})
+};
 
 export default PreparedList;
